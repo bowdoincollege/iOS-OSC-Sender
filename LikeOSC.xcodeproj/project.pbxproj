@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9230D8C4ECCD9AD27EA5EE7 /* Pods_LikeOSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FBA2F416C1DED1A415CF070 /* Pods_LikeOSC.framework */; };
 		FD3280E21EA055FF00E31E40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3280E11EA055FF00E31E40 /* AppDelegate.swift */; };
 		FD3280E41EA055FF00E31E40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3280E31EA055FF00E31E40 /* ViewController.swift */; };
 		FD3280E71EA055FF00E31E40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD3280E51EA055FF00E31E40 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0EA42644028FA32DD14E6B04 /* Pods-LikeOSC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LikeOSC.release.xcconfig"; path = "Pods/Target Support Files/Pods-LikeOSC/Pods-LikeOSC.release.xcconfig"; sourceTree = "<group>"; };
+		5FBA2F416C1DED1A415CF070 /* Pods_LikeOSC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LikeOSC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB156A256B82DEB9C133FD71 /* Pods-LikeOSC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LikeOSC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LikeOSC/Pods-LikeOSC.debug.xcconfig"; sourceTree = "<group>"; };
 		FD3280DE1EA055FF00E31E40 /* LikeOSC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LikeOSC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD3280E11EA055FF00E31E40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD3280E31EA055FF00E31E40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9230D8C4ECCD9AD27EA5EE7 /* Pods_LikeOSC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CAE44511ED4DB5ECD4AAE5C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FBA2F416C1DED1A415CF070 /* Pods_LikeOSC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F501B0C1071944FEB5795955 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB156A256B82DEB9C133FD71 /* Pods-LikeOSC.debug.xcconfig */,
+				0EA42644028FA32DD14E6B04 /* Pods-LikeOSC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FD3280D51EA055FF00E31E40 = {
 			isa = PBXGroup;
 			children = (
 				FD3280E01EA055FF00E31E40 /* LikeOSC */,
 				FD3280DF1EA055FF00E31E40 /* Products */,
+				F501B0C1071944FEB5795955 /* Pods */,
+				CAE44511ED4DB5ECD4AAE5C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD3280F01EA055FF00E31E40 /* Build configuration list for PBXNativeTarget "LikeOSC" */;
 			buildPhases = (
+				BF26B33A5A7A91C73DC281F9 /* [CP] Check Pods Manifest.lock */,
 				FD3280DA1EA055FF00E31E40 /* Sources */,
 				FD3280DB1EA055FF00E31E40 /* Frameworks */,
 				FD3280DC1EA055FF00E31E40 /* Resources */,
+				4D3C6751736D5071CACA5BC6 /* [CP] Embed Pods Frameworks */,
+				368049AF8ACD744E1B553FD9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,7 +123,7 @@
 				TargetAttributes = {
 					FD3280DD1EA055FF00E31E40 = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = 94U9X98A78;
+						DevelopmentTeam = YT8GFC2RPJ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		368049AF8ACD744E1B553FD9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LikeOSC/Pods-LikeOSC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D3C6751736D5071CACA5BC6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LikeOSC/Pods-LikeOSC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF26B33A5A7A91C73DC281F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FD3280DA1EA055FF00E31E40 /* Sources */ = {
@@ -261,12 +336,13 @@
 		};
 		FD3280F11EA055FF00E31E40 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB156A256B82DEB9C133FD71 /* Pods-LikeOSC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 94U9X98A78;
+				DEVELOPMENT_TEAM = YT8GFC2RPJ;
 				INFOPLIST_FILE = LikeOSC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.stephenhouser.LikeOSC;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.bowdoin.houser.LikeOSC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -274,12 +350,13 @@
 		};
 		FD3280F21EA055FF00E31E40 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EA42644028FA32DD14E6B04 /* Pods-LikeOSC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 94U9X98A78;
+				DEVELOPMENT_TEAM = YT8GFC2RPJ;
 				INFOPLIST_FILE = LikeOSC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.stephenhouser.LikeOSC;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.bowdoin.houser.LikeOSC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -304,6 +381,7 @@
 				FD3280F21EA055FF00E31E40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
