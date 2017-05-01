@@ -8,6 +8,7 @@
 
 import UIKit
 import OSCKit // https://github.com/256dpi/OSCKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
@@ -19,6 +20,8 @@ class ViewController: UIViewController {
     var clientIPPort = "2222"
 
     var clientAddress = "127.0.0.1:2222" //inet 139.140.214.218
+
+    var audioPlayer: AVAudioPlayer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,44 +62,28 @@ class ViewController: UIViewController {
         }
     }
 
-    @IBAction func clickLike(_ sender: UIButton) {
-        let message = OSCMessage(address: "/like", arguments: nil)
-        client.send(message, to: "udp://\(clientAddress)")
-    }
+    @IBAction func clickSoundButton(_ sender: UIButton) {
+        if (audioPlayer != nil && audioPlayer.isPlaying) {
+            audioPlayer.stop()
+            audioPlayer = nil;
+        } else {
+            if let path = Bundle.main.path(forResource: "Narration", ofType: "mp3") {
+               let url = URL(fileURLWithPath: path)
 
-    @IBAction func clickDontLike(_ sender: UIButton) {
-        let message = OSCMessage(address: "/dontlike", arguments: nil)
-        client.send(message, to: "udp://\(clientAddress)")
-    }
-
-    @IBAction func clickSoundToggle(_ sender: UIButton) {
-        let message = OSCMessage(address: "/toggleSound", arguments: nil)
-        client.send(message, to: "udp://\(clientAddress)")
-    }
-
-    @IBAction func clickSetup(_ sender: UIButton) {
-        /*
-        let alert = UIAlertController(title: "Max/MSP Address", message: "Address and Port", preferredStyle: .alert)
-
-        //2. Add the text field. You can configure it however you need.
-        alert.addTextField { (textField) in
-            textField.text = self.clientAddress
-        }
-
-        // 3. Grab the value from the text field, and print it when the user clicks OK.
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
-            // Force unwrapping because we know it exists.
-            let textField = alert!.textFields![0]
-            if (textField.text != nil) {
-                self.clientAddress = textField.text!
+                do {
+                    audioPlayer = try AVAudioPlayer(contentsOf: url)
+                    audioPlayer.prepareToPlay()
+                    audioPlayer.play()
+                } catch {
+                }
             }
-            //print("Text field: \(textField.text)")
-        }))
-        
-        // 4. Present the alert.
-        self.present(alert, animated: true, completion: nil)
-         */
+        }
     }
 
+    @IBAction func clickButton(_ sender: UIButton) {
+        let tag = "/button-\(sender.tag)"
+        let message = OSCMessage(address: tag, arguments: nil)
+        client.send(message, to: "udp://\(clientAddress)")
+    }
 }
 
