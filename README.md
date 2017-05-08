@@ -13,7 +13,7 @@ with Max uses Bonjour and does not work well in our enterprise WiFi environment.
 The app must be configured in ```Settings``` with the IP address and port
 to send message to. Settings was used rather than an in-app configuration
 to allow the app to be put in single application or guided access mode, thus
-preventing users from doing anythin on the device other than run the app.
+preventing users from doing anything on the device other than run the app.
 
 The messages sent by the buttons and the icons and text are not user
 configurable in this version of the app.
