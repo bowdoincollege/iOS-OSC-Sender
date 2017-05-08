@@ -129,7 +129,7 @@
 				TargetAttributes = {
 					FD3280DD1EA055FF00E31E40 = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = YT8GFC2RPJ;
+						DevelopmentTeam = 3W7CXAL2T5;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -347,7 +347,7 @@
 			baseConfigurationReference = DB156A256B82DEB9C133FD71 /* Pods-LikeOSC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YT8GFC2RPJ;
+				DEVELOPMENT_TEAM = 3W7CXAL2T5;
 				INFOPLIST_FILE = LikeOSC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -362,7 +362,7 @@
 			baseConfigurationReference = 0EA42644028FA32DD14E6B04 /* Pods-LikeOSC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YT8GFC2RPJ;
+				DEVELOPMENT_TEAM = 3W7CXAL2T5;
 				INFOPLIST_FILE = LikeOSC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
