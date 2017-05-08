@@ -35,3 +35,19 @@ pressed.
 
 The ```SOUND``` button triggers playback (and stopping) of a built in audio
 narration track.
+
+# Compiling/Building
+
+This project uses [cocoapods](https://cocoapods.org) and the
+[OSCKit](https://cocoapods.org/?q=osckit) pod. To build the project you will
+have to install cocoapods and update/install the pods before building the
+project/workspace.
+
+```
+# Xcode 7 + 8
+$ sudo gem install cocoapods
+$ pod install
+```
+
+Please refer to the [cocoapods](https://cocoapods.org) website for the latest
+instructions on installing and using cocoapods.
