@@ -12,6 +12,7 @@
 		FD3280E71EA055FF00E31E40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD3280E51EA055FF00E31E40 /* Main.storyboard */; };
 		FD3280E91EA055FF00E31E40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3280E81EA055FF00E31E40 /* Assets.xcassets */; };
 		FD3280EC1EA055FF00E31E40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD3280EA1EA055FF00E31E40 /* LaunchScreen.storyboard */; };
+		FD7D79DA1EC0EFA200C70307 /* Pods_OSC_Sender.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7D79D91EC0EFA200C70307 /* Pods_OSC_Sender.framework */; };
 		FD9CE5AA1EA1133200F6F7ED /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FD9CE5A91EA1133200F6F7ED /* Settings.bundle */; };
 		FDFC334F1EB76B1700C4FEEC /* Narration.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FDFC334E1EB76B1700C4FEEC /* Narration.mp3 */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		FD3280E81EA055FF00E31E40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD3280EB1EA055FF00E31E40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD3280ED1EA055FF00E31E40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD7D79D91EC0EFA200C70307 /* Pods_OSC_Sender.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_OSC_Sender.framework; path = "Pods/../build/Debug-iphoneos/Pods_OSC_Sender.framework"; sourceTree = "<group>"; };
 		FD9CE5A91EA1133200F6F7ED /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		FDFC334E1EB76B1700C4FEEC /* Narration.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Narration.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -37,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD7D79DA1EC0EFA200C70307 /* Pods_OSC_Sender.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +49,7 @@
 		CAE44511ED4DB5ECD4AAE5C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FD7D79D91EC0EFA200C70307 /* Pods_OSC_Sender.framework */,
 				5FBA2F416C1DED1A415CF070 /* Pods_OSC-Sender.framework */,
 				6A87067854B1544053E90F0B /* Pods_OSC_Sender.framework */,
 			);
@@ -349,6 +353,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 3W7CXAL2T5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = "OSC-Sender/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -365,6 +373,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 3W7CXAL2T5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = "OSC-Sender/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
