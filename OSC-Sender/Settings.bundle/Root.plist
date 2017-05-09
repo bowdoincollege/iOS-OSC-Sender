@@ -16,7 +16,7 @@
 			<key>DefaultValue</key>
 			<string>127.0.0.1</string>
 			<key>KeyboardType</key>
-			<string>NumberPad</string>
+			<string>NumbersAndPunctuation</string>
 		</dict>
 		<dict>
 			<key>Type</key>

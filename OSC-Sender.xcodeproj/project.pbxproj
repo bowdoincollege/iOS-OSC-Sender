@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		598391E74582D300C36311DC /* Pods_OSC_Sender.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A87067854B1544053E90F0B /* Pods_OSC_Sender.framework */; };
+		FD2B51A81EC1FDE800B21F72 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = FD2B51A71EC1FDE800B21F72 /* background.png */; };
 		FD3280E21EA055FF00E31E40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3280E11EA055FF00E31E40 /* AppDelegate.swift */; };
 		FD3280E41EA055FF00E31E40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3280E31EA055FF00E31E40 /* ViewController.swift */; };
 		FD3280E71EA055FF00E31E40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD3280E51EA055FF00E31E40 /* Main.storyboard */; };
@@ -22,6 +24,7 @@
 		5FBA2F416C1DED1A415CF070 /* Pods_OSC-Sender.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_OSC-Sender.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A87067854B1544053E90F0B /* Pods_OSC_Sender.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OSC_Sender.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB156A256B82DEB9C133FD71 /* Pods-OSC-Sender.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OSC-Sender.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OSC-Sender/Pods-OSC-Sender.debug.xcconfig"; sourceTree = "<group>"; };
+		FD2B51A71EC1FDE800B21F72 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		FD3280DE1EA055FF00E31E40 /* OSC-Sender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OSC-Sender.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD3280E11EA055FF00E31E40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD3280E31EA055FF00E31E40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD7D79DA1EC0EFA200C70307 /* Pods_OSC_Sender.framework in Frameworks */,
+				598391E74582D300C36311DC /* Pods_OSC_Sender.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +90,7 @@
 		FD3280E01EA055FF00E31E40 /* OSC-Sender */ = {
 			isa = PBXGroup;
 			children = (
+				FD2B51A71EC1FDE800B21F72 /* background.png */,
 				FDFC334E1EB76B1700C4FEEC /* Narration.mp3 */,
 				FD3280E11EA055FF00E31E40 /* AppDelegate.swift */,
 				FD3280E31EA055FF00E31E40 /* ViewController.swift */,
@@ -162,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD9CE5AA1EA1133200F6F7ED /* Settings.bundle in Resources */,
+				FD2B51A81EC1FDE800B21F72 /* background.png in Resources */,
 				FD3280EC1EA055FF00E31E40 /* LaunchScreen.storyboard in Resources */,
 				FD3280E91EA055FF00E31E40 /* Assets.xcassets in Resources */,
 				FDFC334F1EB76B1700C4FEEC /* Narration.mp3 in Resources */,
@@ -363,6 +369,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.bowdoin.houser.OSC-Sender";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -383,6 +390,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.bowdoin.houser.OSC-Sender";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
